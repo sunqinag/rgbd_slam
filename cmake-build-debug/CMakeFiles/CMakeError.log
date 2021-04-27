@@ -1,0 +1,60 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ecb8e/fast && /usr/bin/make  -f CMakeFiles/cmTC_ecb8e.dir/build.make CMakeFiles/cmTC_ecb8e.dir/build
+make[1]: 进入目录“/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ecb8e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ecb8e.dir/src.c.o   -c /media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ecb8e
+/opt/CLion-2020.2/clion-2020.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecb8e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_ecb8e.dir/src.c.o  -o cmTC_ecb8e 
+/usr/bin/ld: CMakeFiles/cmTC_ecb8e.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ecb8e.dir/build.make:107：cmTC_ecb8e] 错误 1
+make[1]: 离开目录“/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:141：cmTC_ecb8e/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_58075/fast && /usr/bin/make  -f CMakeFiles/cmTC_58075.dir/build.make CMakeFiles/cmTC_58075.dir/build
+make[1]: 进入目录“/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_58075.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_58075.dir/CheckFunctionExists.c.o   -c /opt/CLion-2020.2/clion-2020.2/bin/cmake/linux/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_58075
+/opt/CLion-2020.2/clion-2020.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58075.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_58075.dir/CheckFunctionExists.c.o  -o cmTC_58075  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_58075.dir/build.make:107：cmTC_58075] 错误 1
+make[1]: 离开目录“/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:141：cmTC_58075/fast] 错误 2
+
+
+

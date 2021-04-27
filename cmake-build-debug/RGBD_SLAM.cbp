@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RGBD_SLAM"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\pcl-1.11\;CMake Files\..\..\..\..\..\usr\local\share\pcl-1.11\Modules\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\;CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\CMake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RGBD_SLAM">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/libRGBD_SLAM.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 RGBD_SLAM"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RGBD_SLAM/fast">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/libRGBD_SLAM.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 RGBD_SLAM/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generatePointCloud">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/generatePointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 generatePointCloud"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generatePointCloud/fast">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/generatePointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 generatePointCloud/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detectFeatures">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/detectFeatures" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 detectFeatures"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detectFeatures/fast">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/detectFeatures" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 detectFeatures/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamBase">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/slamBase" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 slamBase"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slamBase/fast">
+				<Option output="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/slamBase" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDISABLE_PCAP"/>
+					<Add option="-DDISABLE_PNG"/>
+					<Add option="-DDISABLE_LIBUSB_1_0"/>
+					<Add directory="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/include"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/usr/local/include/pcl-1.11"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 slamBase/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/src/detectFeatures.cpp">
+			<Option target="RGBD_SLAM"/>
+			<Option target="detectFeatures"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/src/generatePointCloud.cpp">
+			<Option target="generatePointCloud"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/src/joinPointCloud.cpp">
+			<Option target="RGBD_SLAM"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/src/slamBase.cpp">
+			<Option target="RGBD_SLAM"/>
+			<Option target="slamBase"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/pcl-1.11/PCLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\pcl-1.11\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/pcl-1.11/PCLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\pcl-1.11\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/pcl-1.11/Modules/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\pcl-1.11\Modules\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/VTKTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/VTKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
+		</Unit>
+		<Unit filename="/media/xtcsun/e58c5409-4d15-4c21-b7a0-623f13653d53/Learn/rgbd_slam/../../../../../usr/lib/vtk-5.10/CMake/vtkMakeInstantiator.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\CMake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
